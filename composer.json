@@ -1,0 +1,17 @@
+{
+    "name": "nguoingulanh/paypal-panel",
+    "description": "Payment paypal ...",
+    "type": "library",
+    "require": {
+        "php": ">=7.3",
+        "paypal/paypalhttp": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lanh Nguyễn",
+            "email": "43754318+nguoingulanh@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
