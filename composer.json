@@ -1,6 +1,7 @@
 {
     "name": "nguoingulanh/paypal-panel",
     "description": "Payment paypal ...",
+    "keywords": ["paypal", "payments"],
     "type": "library",
     "require": {
         "php": ">=7.3",
@@ -13,5 +14,10 @@
             "email": "43754318+nguoingulanh@users.noreply.github.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "PaypalPanel\\": "src/Sdk"
+        }
+    },
     "minimum-stability": "dev"
 }
