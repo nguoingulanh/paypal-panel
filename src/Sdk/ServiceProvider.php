@@ -12,7 +12,7 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot(): void
     {
-
+        $this->registerPublishing();
     }
 
     /**
@@ -30,5 +30,13 @@ class ServiceProvider extends BaseServiceProvider
     protected function getConfig(): string
     {
         return __DIR__.'/../config/config.php';
+    }
+
+    /**
+     * Register the package's publishable resources.
+     */
+    protected function registerPublishing(): void
+    {
+        $this->publishes([$this->getConfig() => config_path('paypal-panel.php')], 'config');
     }
 }

@@ -19,5 +19,12 @@
             "PaypalPanel\\": "src/Sdk"
         }
     },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "PaypalPanel\\ServiceProvider"
+          ]
+        }
+    },
     "minimum-stability": "dev"
 }
