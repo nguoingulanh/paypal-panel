@@ -1,7 +1,14 @@
 https://developer.paypal.com/api/rest/authentication/ <br>
 https://developer.paypal.com/docs/api/orders/v2/
 
+## Configuration
 
+To get started, you should publish the `config/paypal-panel.php` config file with:
+
+```
+php artisan vendor:publish --provider="PaypalPanel/ServiceProvider"
+
+```
 #### setup construct:
 
 ```php
@@ -54,4 +61,3 @@ try {
     print_r($ex->getMessage());
 }
 ```
-#### Example Output:

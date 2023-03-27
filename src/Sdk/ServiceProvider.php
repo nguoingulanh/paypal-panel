@@ -20,7 +20,6 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function register(): void
     {
-        $this->app->register(EventServiceProvider::class);
         $this->mergeConfigFrom($this->getConfig(), 'paypal-panel');
     }
 
@@ -29,7 +28,7 @@ class ServiceProvider extends BaseServiceProvider
      */
     protected function getConfig(): string
     {
-        return __DIR__.'/../config/config.php';
+        return __DIR__.'/config/paypal-panel.php';
     }
 
     /**
